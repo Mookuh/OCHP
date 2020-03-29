@@ -4,8 +4,8 @@ This file summarizes the changes made in OCHP version 1.5, coming from version 1
 More authorization methods are being used to access charging stations than RFID cards or remote tokens.
 To enable full support of additional identification methods, OCHP 1.5 is aligning with OCPP version 2.0 where feasible for the roaming usecase.
 
-*Instance set to 36 characters (was 256)
-*TokenType enum changed to be in line with OCPP 2.0
+* Instance set to 36 characters (was 256)
+* TokenType enum changed to be in line with OCPP 2.0
 
 ### EmtId *class*
 
