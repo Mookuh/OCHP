@@ -29,13 +29,13 @@ The type of the supplied instance for basic filtering.
 
  Value       |  Description
 :------------|:-------------
- iso14443    |  All kinds of RFID-Cards. Field tokenInstance holds the hexadecimal representation of the card's UID, Byte order: big endian, no zero-filling. Formerly 'rfid'
- iso15693    |  All kinds of NFC identification. Field tokenInstance holds the hexadecimal representation of the card's UID, Byte order: big endian, no zero-filling.
+ iso14443    |  RFID-Cards. Field tokenInstance holds the hexadecimal representation of the card's UID, 4 or 7 byte, Byte order: big endian, no zero-filling. Formerly 'rfid'
+ iso15693    |  8-byte ID specification of RFID according to ISO-15693. Field tokenInstance holds the hexadecimal representation of the card's UID, Byte order: big endian, no zero-filling. Aligned with OCPP 2.0
  iso15118    |  All authentication means defined by ISO/IEC 15118 except RFID-cards.
  remote      |  All means of remote authentication through the backend. Field tokenInstance holds a reference to the remote authorization or session. In case of a OCHPdirect authorization the _directId_.
 
 
-### tokenSubType *enum*
+<!---### tokenSubType *enum*
 
 The exact type of the supplied instance for referencing purpose.
 
@@ -73,4 +73,4 @@ Contains information about a roaming authorisation (card/token)
  contractId     |  ContractId      |  1      |  EMA-ID the token belongs to.
  permissions    |  PermissionsType |  +      |  What fuel types the contract may charge.
  printedNumber  |  string(150)     |  ?      |  Might be used for manual authorisation.
- expiryDate     |  DateTimeType    |  1      |  Tokens may be used until the date of expiry is reached. To be handled by the partners systems. Expired roaming authorisations may be erased locally by each partner's systems.
+ expiryDate     |  DateTimeType    |  1      |  Tokens may be used until the date of expiry is reached. To be handled by the partners systems. Expired roaming authorisations may be erased locally by each partner's systems.-->
